@@ -1,0 +1,3 @@
+#lang racket
+(printf "part 1: ~a\n" (let ([a 0]) (for ([l(file->lines "input.txt")]) (let ([l(filter char-numeric? (string->list l))]) (set! a (+ a (string->number (list->string (list (first l) (first (reverse l))))))))) a))
+(printf "part 2: ~a\n" (let ([a 0]) (for ([l(file->lines "input.txt")]) (let* ([l(regexp-replaces l'([#rx"one" "o1e"][#rx"two" "t2o"][#rx"three" "t3e"][#rx"four" "f4r"][#rx"five" "f5e"][#rx"six" "s6x"][#rx"seven" "s7n"][#rx"eight" "e8t"][#rx"nine" "n9e"]))][l(filter char-numeric? (string->list l))])(set! a (+ a (string->number (list->string (list (first l) (first (reverse l))))))))) a))
