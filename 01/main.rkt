@@ -8,18 +8,18 @@
 (printf "part 1: ~a\n" (apply + (map cv (file->lines "input.txt"))))
 
 (define (cv2 line)
-  ; todo: fix later
-  (let* ([line (regexp-replace* #rx"one" line "o1e")]
-         [line (regexp-replace* #rx"two" line "t2o")]
-         [line (regexp-replace* #rx"three" line "t3hree")]
-         [line (regexp-replace* #rx"four" line "f4ur")]
-         [line (regexp-replace* #rx"five" line "f5ve")]
-         [line (regexp-replace* #rx"six" line "s6x")]
-         [line (regexp-replace* #rx"seven" line "s7ven")]
-         [line (regexp-replace* #rx"eight" line "e8ght")]
-         [line (regexp-replace* #rx"nine" line "n9ne")])
+    (cv (regexp-replaces line '([#rx"one" "o1e"]
+                                        [#rx"two" "t2o"]
+                                        [#rx"three" "t3e"]
+                                        [#rx"four" "f4r"]
+                                        [#rx"five" "f5e"]
+                                        [#rx"six" "s6x"]
+                                        [#rx"seven" "s7n"]
+                                        [#rx"eight" "e8t"]
+                                        [#rx"nine" "n9e"]))))
 
-    (cv line)))
+
+
 
 (printf "part 2 example: ~a\n" (apply + (map cv2 (file->lines "example2.txt"))))
 (printf "part 2: ~a\n" (apply + (map cv2 (file->lines "input.txt"))))
