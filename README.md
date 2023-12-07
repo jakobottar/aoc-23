@@ -8,7 +8,7 @@ https://adventofcode.com/2023
 | [1](https://adventofcode.com/2023/day/1)   | :star: | :star: |
 | [2](https://adventofcode.com/2023/day/2)   | :star: | :star: |
 | [3](https://adventofcode.com/2023/day/3)   | :star: | :star: |
-| [4](https://adventofcode.com/2023/day/4)   | :star: |        |
+| [4](https://adventofcode.com/2023/day/4)   | :star: | :star: |
 | [5](https://adventofcode.com/2023/day/5)   |        |        |
 | [6](https://adventofcode.com/2023/day/6)   |        |        |
 | [7](https://adventofcode.com/2023/day/7)   |        |        |
