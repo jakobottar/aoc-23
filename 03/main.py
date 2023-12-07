@@ -27,6 +27,7 @@ def look_around(chargrid, row, col):
                 pass
     return False
 
+
 def look_around_p2(chargrid, row, col):
     """look around current position in grid and return True if there is a cog symbol in an adjacent cell"""
     for r in range(row - 1, row + 2):
@@ -105,5 +106,3 @@ if __name__ == "__main__":
             total += group[0] * group[1]
 
     print(f"part 2: {total}")
-
-
